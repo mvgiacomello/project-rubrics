@@ -1,4 +1,6 @@
-* { border: 1px solid red; }
+/* Debug */
+/* * { border: 1px solid red; } */
+
 
 body {
     margin: 0px;
@@ -11,20 +13,48 @@ body {
     row-gap: 20px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-size: 16px;
+}
+
+/* Header */
+
 header {
     grid-area: header;
     background-color: rgb(26, 188, 156);
     color: white;
     font-family: Lato, Arial, sans-serif;
-    font-size: small;
-    text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
+
+#header-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+#header-container-post {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: baseline;
+}
+
+#back-button {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+
+#post-title {
+    text-align: center;
+}
+
+/* Content and Post */
 
 main {
     grid-area: main;
     font-family: Raleway;
-    font-size: medium;
 }
 
 main > h2 {
@@ -34,7 +64,7 @@ main > h2 {
 article {
     background-color: rgb(245, 245, 245);
     border-radius: 10px;
-    padding: 40px;
+    padding: 20px;
     margin: 40px;
     display: grid;
     grid-template-areas:
@@ -53,33 +83,37 @@ article {
     grid-area: image;
     width: 200px;
     height: auto;
+    border-radius: 10px;
 }
 
 .post-entry-text {
     grid-area: text;
 }
-.post-entry-readmore {
+
+.post-entry-readmore,
+.post-entry-readmore > a,
+.post-entry-readmore > a:visited
+{
     grid-area: link;
-    display: flex;
-}
-.post-entry-readmore > a{
-    align-self: flex-end;
-    width: auto;
-    height: auto;
     color: black;
     text-decoration: none;
 }
 
-.post-entry-readmore > a:visited{
-    color: black;
-}
+/* Footer */
 
 footer {
     grid-area: footer;
     background-color: rgb(26, 188, 156);
     color: white;
     font-family: Lato, Arial, sans-serif;
-    font-size: small;
+    padding: 20px;
+}
+
+#footer-social,
+#footer-social > a,
+#footer-social > a:visited,
+#footer-location {
     text-align: center;
-    padding: 30px;
+    text-decoration: none;
+    color: white;
 }
