@@ -1,0 +1,35 @@
+header {
+    grid-area: header;
+    background-color: rgb(26, 188, 156);
+    color: rgb(255,255,255);
+    font-family: Lato, Arial, sans-serif;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Main Page */
+
+#header-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+/* Post Page */
+
+#header-container-post {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: baseline;
+}
+
+#back-button {
+    text-decoration: none;
+    color: rgb(255,255,255);
+    padding-left: 10px;
+}
+
+#post-title {
+    text-align: center;
+}

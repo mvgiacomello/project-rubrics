@@ -1,0 +1,50 @@
+.post-full {
+    background-color: rgb(245, 245, 245);
+    min-width: 300px;
+    max-width: 900px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-full-fig > img{
+    border-radius: 10px;
+}
+
+.post-full-fig > figcaption{
+    font-size: 10px;
+    text-align: center;
+}
+
+.post-full-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.post-full-share {
+    font-size: 12px;
+}
+
+.post-full-author {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.post-full-author > * > img {
+    border-radius: 10px;
+}
+
+.post-full-author > * > figcaption {
+    font-size: 10px;
+    text-align: center;
+}
+
+.post-full-author > p {
+    margin-left: 20px;
+}
